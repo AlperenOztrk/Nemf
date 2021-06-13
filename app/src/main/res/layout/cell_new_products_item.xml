@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="10dp"
+    android:visibility="gone"
+    tools:ignore="SpUsage, ContentDescription">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rounded_transparent_bg"
+        android:scaleType="centerCrop"
+        android:translationY="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/sample_drawable" />
+
+    <LinearLayout
+        android:id="@+id/layout_product_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="@string/sampleProductName" />
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14dp"
+            tools:text="@string/sampleStoreName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_product_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bottom_gray"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_product_info">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="@string/samplePrice" />
+
+        <TextView
+            android:id="@+id/oldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="#60000000"
+            android:textSize="16dp"
+            tools:text="@string/sampleDiscountedPrice" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fastShipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_bg_green"
+        android:padding="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fastShipping"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

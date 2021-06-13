@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Nemf</string>
+    <string name="featured">Öne Çıkarılanlar</string>
+    <string name="sampleStoreName">Wiuma</string>
+    <string name="sampleStoreSubtitle">Vitrin</string>
+    <string name="sampleProductName">Sample Product</string>
+    <string name="sampleDiscountedPrice">34TL</string>
+    <string name="samplePrice">28TL</string>
+    <string name="sampleCategoryName">Sample Category</string>
+    <string name="sampleCollectionsName">Hediye Önerileri</string>
+    <string name="sampleCollectionsDescription">Eşsiz Hediyelerle Mutlu Edin</string>
+    <string name="sampleStoreDescription">This is a sample description for Sample Store.\nAnd this is the second line of sample description.</string>
+    <string name="more">Tümü</string>
+    <string name="search_hint">Ara</string>
+    <string name="fastShipping">Hızlı Kargo</string>
+    <string name="follow">Takip Et</string>
+    <string name="product">\u0020Ürün</string>
+
+    <string name="new_products">En Yeni Ürünler</string>
+    <string name="collections">Koleksiyonlar</string>
+    <string name="editor_shops">Editör Seçimi Vitrinler</string>
+    <string name="new_shops">En Yeni Vitrinler</string>
+    <string name="loading">Yükleniyor...</string>
+</resources>
